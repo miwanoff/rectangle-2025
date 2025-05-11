@@ -7,6 +7,8 @@ let topOffset = 0;
 
 let maxOffset = 200;
 
+let counter = 0;
+
 const box = document.getElementById("box");
 
 function moveBox() {
@@ -43,6 +45,7 @@ function moveBox() {
 }
 
 function speed() {
+  counter++;
   time = prompt("Введить швидкість");
   console.log(time);
   box.innerHTML = time; 
