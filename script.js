@@ -42,4 +42,12 @@ function moveBox() {
   }
 }
 
+function speed() {
+  time = prompt("Введить швидкість");
+  console.log(time);
+  box.innerHTML = time; 
+  clearInterval(timer); 
+  timer = setInterval(moveBox, time); 
+}
+
 timer = setInterval(moveBox, time);
